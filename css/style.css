@@ -117,7 +117,13 @@ body {
 
 
 /* restaurant page */
-.restaurant-grid {
+.restaurant_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    margin-top: 20px;
+    row-gap: 20px;
+
 }
+
+
