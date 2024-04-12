@@ -1,4 +1,5 @@
-body {
+/* menu & travel page - WENXI */
+#no-scroll {
     overflow: hidden;
 }
 
@@ -19,7 +20,7 @@ body {
     opacity: 1;
 }
 /* font setting */
-.menu-font {
+.font {
   font-family: "Noto Serif Display", serif;
   font-optical-sizing: auto;
   font-weight: 3;
@@ -76,6 +77,25 @@ body {
     color: black;
 } */
 
+.hidden {
+    display: none;
+}
+
+.menu-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none; /* Remove underline from links */
+    color: #EDF7B5; /* Set text color */
+    background-color:#6D8C18; /* Optional: background color */
+    border: none; /* Optional: no border */
+    border-radius: 25px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
 .nav-mainmenu {
     margin-top: 100px;
     margin-left: 40px;
@@ -91,7 +111,7 @@ body {
 
 .nav-mainmenu li a:hover {
     text-decoration: underline;
-    color: #F9C555;
+    color: #EDF7B5;
 }
 
 .nav-intro {
@@ -102,21 +122,48 @@ body {
     color: white;
     line-height: 25px;
 }
-/* travel page */
+
+/* travel page header "Travel" */
 .travel-header {
     font-size: 60px;
     text-align: center;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
+
+/* .travel-header-pic {
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+} */
+
 
 .travel-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    justify-items: center;
+}
+
+.location-grid {
+    line-height: 25px;
+    margin-bottom: 100px;
+}
+
+.location-photos {
+    object-fit: cover;
+    width:  450px;
+    height: 600px;
+    margin-bottom: 10px;
 }
 
 
-/* restaurant page */
+
+
+
+/* restaurant page - SHERRIE */
 .restaurant_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
