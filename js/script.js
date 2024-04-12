@@ -13,4 +13,11 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
 
-  
+document.addEventListener('DOMContentLoaded', function(){
+  let menuButton = document.querySelector('.menu-button');
+  let menu = document.querySelector('.nav-mainmenu');
+
+  menuButton.addEventListener('click', function() {
+    menu.classList.toggle('hidden');
+  });
+})
