@@ -1,24 +1,12 @@
 /* menu & travel page - WENXI */
+body {
+    background-color: #F9F6F0;
+}
+
 #no-scroll {
     overflow: hidden;
 }
 
-/* travel page skip to main button */
-.travel-skip {
-    position: fixed;
-    top: 10px;
-    right: 16px;
-    background-color: #fff;
-    order: 1px solid #000;
-    padding: 8px 15px;
-    z-index: 999;
-    color: #000;
-    text-decoration: none;
-    opacity: 0;
-}
-.travel-skip:focus {
-    opacity: 1;
-}
 /* font setting */
 .font {
   font-family: "Noto Serif Display", serif;
@@ -85,13 +73,13 @@
     position: absolute;
     top: 20px;
     left: 20px;
-    padding: 10px 20px;
+    padding: 20px;
     font-size: 18px;
     text-decoration: none; /* Remove underline from links */
     color: #EDF7B5; /* Set text color */
     background-color:#6D8C18; /* Optional: background color */
     border: none; /* Optional: no border */
-    border-radius: 25px;
+    border-radius: 50%;
     cursor: pointer;
     z-index: 1000;
 }
@@ -123,23 +111,47 @@
     line-height: 25px;
 }
 
+
+/* travel page skip to main button */
+.travel-skip {
+    position: fixed;
+    top: 10px;
+    right: 16px;
+    background-color: #fff;
+    order: 1px solid #000;
+    padding: 8px 15px;
+    z-index: 999;
+    color: #000;
+    text-decoration: none;
+    opacity: 0;
+}
+.travel-skip:focus {
+    opacity: 1;
+}
+
 /* travel page header "Travel" */
 .travel-header {
-    font-size: 60px;
+    font-size: 70px;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 200px;
+    margin-bottom: 30px;
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
 /* .travel-header-pic {
-    justify-content: center;
-    width: 50%;
-    height: 50%;
+    justify-items: center;
+    height: auto;
+    margin-bottom: 100px;
 } */
 
+.travel-intro {
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 100px;
+    text-align: center;
+}
 
 .travel-grid {
     display: grid;
@@ -149,7 +161,28 @@
 
 .location-grid {
     line-height: 25px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
+}
+
+.location-name {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.location-link {
+    text-decoration: none;
+    color: black;
+}
+
+.location-link:hover {
+    text-decoration: underline;
+    color: #6D8C18;
+}
+
+.location-info {
+    font-size: 14px;
+    line-height: 20px;
+    color: #312202;
 }
 
 .location-photos {
@@ -158,6 +191,37 @@
     height: 600px;
     margin-bottom: 10px;
 }
+
+.location-photos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area, cropping as needed */
+}
+
+
+.travel-footer {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #312202;
+    height: 300px;
+    color: #EDF7B5;
+}
+/* .travel-footer p {
+    padding: 20px;
+} */
+
+.travel-footer img {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+}
+
 
 
 
