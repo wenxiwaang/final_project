@@ -21,3 +21,19 @@ document.addEventListener('DOMContentLoaded', function(){
     menu.classList.toggle('hidden');
   });
 })
+
+ScrollReveal().reveal('.image', { delay: 200 });
+
+const imgs = document.querySelectorAll('img');
+const fullPage = document.querySelector('#photographyFullpage');
+function popUp(){}
+
+imgs.forEach(img => {
+  img.addEventListener('click', function() {
+    fullPage.style.backgroundImage = 'url(' + img.src + ')';
+    console.log('click working')
+    fullPage.style.display = 'block';
+  });
+});
+
+

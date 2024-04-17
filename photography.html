@@ -4,7 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <script src="https://unpkg.com/scrollreveal"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
@@ -12,7 +12,7 @@
     <title>Photography</title>
     <link rel="icon" type="image/x-icon" href="/images/la.png">
 </head>
-<body>
+<body onload = 'popUp()'>
     <div class = "font">
     <header>
         <a class="photography_skip" href = "#main">Skip to Main Content</a>
@@ -28,101 +28,130 @@
     </header>
     <main id = "main">
         <h1 class = "photography_header">Photography.</h1>
+        <div id="photographyFullpage" onclick = "this.style.display = 'none';"></div>
         <div class = "row">
             <div class = "column">
                 <figure>
-                    <img src="images/beach.jpeg" width="100%">
+                    <img src="images/beach.jpeg" class="image" width="100%">
+                    <div class="photography_word">Beach in LA</div>
                 </figure>
                 <figure>
-                    <img src="images/memory.jpeg" width="100%">
+                    <img src="images/memory.jpeg" class="image" width="100%">
+                    <div class="photography_word">Memory Look Cafe</div>
                 </figure>
                 <figure>
-                    <img src="images/mountain.jpeg" width="100%">
+                    <img src="images/mountain.jpeg" class="image" width="100%">
+                    <div class="photography_word">Mountain House</div>
                 </figure>
                 <figure>
-                    <img src="images/dtla.jpeg" width="100%">
+                    <img src="images/dtla.jpeg" class="image" width="100%">
+                    <div class="photography_word">1000 Grand Rooftop</div>
                 </figure>
                 <figure>
-                    <img src="images/moonshadowsign.jpeg" width="100%">
+                    <img src="images/moonshadowsign.jpeg" class="image" width="100%">
+                    <div class="photography_word">MoonShadow Malibu</div>
+                </figure> 
+                <figure>
+                    <img src="images/acnecoffee.jpeg" class="image" width="100%">
+                    <div class="photography_word">ilCaffè</div>
                 </figure>
                 <figure>
-                    <img src="images/acnecoffee.jpeg" width="100%">
+                    <img src="images/cat.jpeg" class="image" width="100%">
+                    <div class="photography_word">Outdoor cat in my neighborhood</div>
                 </figure>
                 <figure>
-                    <img src="images/cat.jpeg" width="100%">
-                </figure>
-                <figure>
-                    <img src="images/erewhon.jpeg" width="100%">
-                </figure>
-            </div>
-            <div class = "column">
-                <figure>
-                    <img src="images/shakeshack.jpeg" width="100%">
-                </figure>
-                <figure>
-                    <img src="images/sixflag.jpeg" width="100%">
-                </figure>
-                <figure>
-                    <img src="images/izakaya.jpeg" width="100%">
-                </figure>
-                <figure>
-                    <img src="images/sanmarino.jpeg" width="100%">
-                </figure>
-                <figure>
-                    <img src="images/sky.jpeg" width="100%">
-                </figure>
-                <figure>
-                    <img src="images/taier.jpeg" width="100%">
-                </figure>
-                <figure>
-                    <img src="images/thebroad.jpeg" width="100%">
-                </figure>
-                <figure>
-                    <img src="images/moonshadowinside.jpeg" width="100%">
-                </figure>
-                <figure>
-                    <img src="images/katsu.jpeg" width="100%">
+                    <img src="images/erewhon.jpeg" class="image" width="100%">
+                    <div class="photography_word">Coconut Cloud Smoothie</div>
                 </figure>
             </div>
             <div class = "column">
                 <figure>
-                    <img src="images/hollywoodsign.jpeg" width="100%">
+                    <img src="images/shakeshack.jpeg" class="image" width="100%">
+                    <div class="photography_word">Shake Shack</div>
                 </figure>
                 <figure>
-                    <img src="images/brunch.jpeg" width="100%">
+                    <img src="images/sixflag.jpeg" class="image" width="100%">
+                    <div class="photography_word">Twister-Six Flag Magic Mountain</div>
                 </figure>
                 <figure>
-                    <img src="images/madeinla.jpeg" width="100%">
+                    <img src="images/izakaya.jpeg" class="image" width="100%">
+                    <div class="photography_word">Toro Uni Bowl</div>
                 </figure>
                 <figure>
-                    <img src="images/sukiyaki.jpeg" width="100%">
+                    <img src="images/sanmarino.jpeg" class="image" width="100%">
+                    <div class="photography_word">GO CAKES</div>
                 </figure>
                 <figure>
-                    <img src="images/sixflagnight.jpeg" width="100%">
+                    <img src="images/sky.jpeg" class="image" width="100%">
+                    <div class="photography_word">Sky</div>
                 </figure>
                 <figure>
-                    <img src="images/flight.jpeg" width="100%">
+                    <img src="images/taier.jpeg" class="image" width="100%">
+                    <div class="photography_word">Taier太二酸菜鱼</div>
                 </figure>
                 <figure>
-                    <img src="images/noodles.jpeg" width="100%">
+                    <img src="images/thebroad.jpeg" class="image" width="100%">
+                    <div class="photography_word">Otium</div>
                 </figure>
                 <figure>
-                    <img src="images/glandalecupcake.jpeg" width="100%">
+                    <img src="images/moonshadowinside.jpeg" class="image" width="100%">
+                    <div class="photography_word">Moonshadows</div>
                 </figure>
                 <figure>
-                    <img src="images/rodeo.jpeg" width="100%" height="50%">
+                    <img src="images/katsu.jpeg" class="image" width="100%">
+                    <div class="photography_word">Tonkatsu</div>
+                </figure>
+            </div>
+            <div class = "column">
+                <figure>
+                    <img src="images/hollywoodsign.jpeg" class="image" width="100%">
+                    <div class="photography_word">Hollywood Sign</div>
+                </figure>
+                <figure>
+                    <img src="images/brunch.jpeg" class="image" width="100%">
+                    <div class="photography_word">Marco Polo</div>
+                </figure>
+                <figure>
+                    <img src="images/madeinla.jpeg" class="image" width="100%">
+                    <div class="photography_word">Made In Downtown LA</div>
+                </figure>
+                <figure>
+                    <img src="images/sukiyaki.jpeg" class="image" width="100%">
+                    <div class="photography_word">Otoro Bowl with Caviar</div>
+                </figure>
+                <figure>
+                    <img src="images/sixflagnight.jpeg" class="image" width="100%">
+                    <div class="photography_word">Six Flag Magic Mountain</div>
+
+
+                </figure>
+                <figure>
+                    <img src="images/flight.jpeg" class="image" width="100%">
+                    <div class="photography_word">Flight to LA</div>
+                </figure>
+                <figure>
+                    <img src="images/noodles.jpeg" class="image" width="100%">
+                    <div class="photography_word">Tsujita LA Artisan Noodle</div>
+                </figure>
+                <figure>
+                    <img src="images/glandalecupcake.jpeg" class="image" width="100%">
+                    <div class="photography_word">Sprinkles Cupcake</div>
+                </figure>
+                <figure>
+                    <img src="images/rodeo.jpeg" class="image" width="100%" height="50%">
+                    <div class="photography_word">Wilshire</div>
                 </figure>
             </div>
     </div>
+    
 </div>
 
-        <div></div>
+        
         <div></div>
         <div></div>
         <div></div>
     </main>
-    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <script src="js/script.js"></script> -->
+    <script src="js/script.js"></script>
     <footer class="food_footer">
         <p> &copy; Wenxi Wang & Sherrie Li - Web Design 2024</p>
         <img src="images/la.png">
