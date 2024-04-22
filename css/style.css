@@ -76,17 +76,12 @@ body {
     padding: 20px;
     font-size: 18px;
     text-decoration: none; /* Remove underline from links */
-    color: #ffffff; /* Set text color */
-    background-color:#5F8009; /* Optional: background color */
+    color: #EDF7B5; /* Set text color */
+    background-color:#6D8C18; /* Optional: background color */
     border: none; /* Optional: no border */
     border-radius: 50%;
     cursor: pointer;
     z-index: 1000;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-}
-.menu-button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .nav-mainmenu {
@@ -161,7 +156,9 @@ body {
 .travel-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
     justify-items: center;
+    padding: 0px 20px;
 }
 
 .location-grid {
@@ -227,97 +224,7 @@ body {
     height: 150px;
 }
 
-@media screen and (max-width: 750px) {
-    /* MENU PAGE */
-    #no-scroll {
-        overflow: none;
-    }
-    .cover-text {
-        font-size: 30px;
-        top: 40px;
-        left: 20px;
-    }
 
-    .cover-photo img {
-        object-fit: cover;
-        object-position: 0px -140px;
-        width: 100%;
-        height: auto;
-        display: block;
-        margin-bottom: 0px;
-    }
-
-    .large-initial {
-        font-size: 50px;
-    }
-
-    .nav-mainmenu {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-    }
-
-    .nav-mainmenu li {
-        display: block;
-    }
-
-    .nav-mainmenu li a {
-        display: block;
-        color: white;
-        text-decoration: none;
-    }
-
-    .nav-intro {
-        margin-top: 20px;
-        margin-right: 20px;
-        font-size: 14px;
-        line-height: 20px;
-        margin: 20px;
-    }
-
-    .menu-container {
-        display: block;
-        width: 100vw;
-        height: auto;
-        padding-bottom: 20px;
-
-    }
-
-    /* TRAVEL PAGE */
-    .travel-intro {
-        margin: 30px;
-    }
-
-    .travel-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    
-    /* FOOD PAGE */
-    .food_intro {
-        margin: 30px;
-    }
-
-    .restaurant_grid {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-
-    /* PHOTOGRAPHY PAGE */
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 10px;
-        align-items: flex-start;
-      }
-    
-    .column {
-        flex: 30%;
-        max-width: 40%;
-        padding: 20px 4px;
-      }
-}
 
 
 
@@ -479,8 +386,8 @@ body {
   }
 
   .column {
-    flex: 30%;
-    max-width: 40%;
+    flex: 40%;
+    max-width: 50%;
     padding: 20px 4px;
   }
   
@@ -519,9 +426,14 @@ body {
     text-align:start;
   }
 
+
+
 figure:hover .photography_word {
     opacity: 1;
+
   }
+
+
 
 
 #photographyFullpage {
@@ -558,8 +470,9 @@ figure:hover .photography_word {
     height: 150px;
 }
 
+
 @media screen and (min-width: 768px){
-/*     .cover-text {
+    /* .cover-text {
         font-size: 75px;
         position:absolute;
         top: 500px;
@@ -570,10 +483,10 @@ figure:hover .photography_word {
 
     .cover-photo{
         width: 100%;
-        height: 120%;
+        height: 100%;
     }
     .nav-mainmenu {
-        margin-top: 400px;
+        margin-top: 200px;
         margin-left: 40px;
         font-size: 45px;
         color: black;
@@ -610,4 +523,3 @@ figure:hover .photography_word {
 
 
 }
-
