@@ -9,10 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/lightbox.css">
     <title>Photography</title>
     <link rel="icon" type="image/x-icon" href="/images/la.png">
 </head>
-<body onload = 'popUp()'>
+<!-- <body onload = 'popUp()'> -->
     <div class = "font">
     <header>
         <a class="photography_skip" href = "#main">Skip to Main Content</a>
@@ -28,118 +29,169 @@
     </header>
     <main id = "main">
         <h1 class = "photography_header">Photography.</h1>
-        <div id="photographyFullpage" onclick = "this.style.display = 'none';"></div>
+        <!-- <div id="photographyFullpage" onclick = "this.style.display = 'none';"></div> -->
         <div class = "row">
             <div class = "column">
                 <figure>
-                    <img src="images/beach.jpeg" class="image" width="100%">
-                    <div class="photography_word">Beach in LA</div>
+                    <img src="images/beach.jpeg" class="image" width="100%" alt="beach and sunset">
+                        <a href="images/beach.jpeg" data-lightbox="image-1">
+                            <p class="photography_word">Beach in LA</p>
+                        </a>
                 </figure>
                 <figure>
-                    <img src="images/memory.jpeg" class="image" width="100%">
-                    <div class="photography_word">Memory Look Cafe</div>
+                    <img src="images/memory.jpeg" class="image" width="100%" alt="1 matcha latte and 2 latte">
+                    <a href="images/memory.jpeg" data-lightbox="image-2">
+                        <p class="photography_word">Memory Look Cafe</p>
+                    </a>
                 </figure>
                 <figure>
-                    <img src="images/mountain.jpeg" class="image" width="100%">
-                    <div class="photography_word">Mountain House</div>
+                    <img src="images/mountain.jpeg" class="image" width="100%" alt="2 szechuan dishes">
+                    <a href="images/mountain.jpeg" data-lightbox="image-3">
+                        <p class="photography_word">Mountain House</p>
+                    </a>
                 </figure>
                 <figure>
-                    <img src="images/dtla.jpeg" class="image" width="100%">
-                    <div class="photography_word">1000 Grand Rooftop</div>
+                    <img src="images/dtla.jpeg" class="image" width="100%" alt="night view on rooftop">
+                    <a href="images/dtla.jpeg" data-lightbox="image-4">
+                        <p class="photography_word">1000 Grand Rooftop</p>
+                    </a>
                 </figure>
                 <figure>
-                    <img src="images/moonshadowsign.jpeg" class="image" width="100%">
-                    <div class="photography_word">MoonShadow Malibu</div>
+                    <img src="images/moonshadowsign.jpeg" class="image" width="100%" alt="moonshadow sign">
+                    <a href="images/moonshadowsign.jpeg" data-lightbox="image-5">
+                        <p class="photography_word">MoonShadow Malibu</p>
+                    </a>
                 </figure> 
                 <figure>
-                    <img src="images/acnecoffee.jpeg" class="image" width="100%">
-                    <div class="photography_word">ilCaffè</div>
+                    <img src="images/acnecoffee.jpeg" class="image" width="100%" alt="one matcha and one latte">
+                    <a href="images/acnecoffee.jpeg" data-lightbox="image-6">
+                        <p class="photography_word">ilCaffè</p>
+                    </a>
                 </figure>
                 <figure>
-                    <img src="images/cat.jpeg" class="image" width="100%">
-                    <div class="photography_word">Outdoor cat in my neighborhood</div>
+                    <img src="images/cat.jpeg" class="image" width="100%" alt="a cat sitting in front of ">
+                    <a href="images/cat.jpeg" data-lightbox="image-7">
+                        <p class="photography_word">Outdoor cat in my neighborhood</p>
+                    </a>
                 </figure>
                 <figure>
-                    <img src="images/erewhon.jpeg" class="image" width="100%">
-                    <div class="photography_word">Coconut Cloud Smoothie</div>
-                </figure>
-            </div>
-            <div class = "column">
-                <figure>
-                    <img src="images/shakeshack.jpeg" class="image" width="100%">
-                    <div class="photography_word">Shake Shack</div>
-                </figure>
-                <figure>
-                    <img src="images/sixflag.jpeg" class="image" width="100%">
-                    <div class="photography_word">Twister-Six Flag Magic Mountain</div>
-                </figure>
-                <figure>
-                    <img src="images/izakaya.jpeg" class="image" width="100%">
-                    <div class="photography_word">Toro Uni Bowl</div>
-                </figure>
-                <figure>
-                    <img src="images/sanmarino.jpeg" class="image" width="100%">
-                    <div class="photography_word">GO CAKES</div>
-                </figure>
-                <figure>
-                    <img src="images/sky.jpeg" class="image" width="100%">
-                    <div class="photography_word">Sky</div>
-                </figure>
-                <figure>
-                    <img src="images/taier.jpeg" class="image" width="100%">
-                    <div class="photography_word">Taier太二酸菜鱼</div>
-                </figure>
-                <figure>
-                    <img src="images/thebroad.jpeg" class="image" width="100%">
-                    <div class="photography_word">Otium</div>
-                </figure>
-                <figure>
-                    <img src="images/moonshadowinside.jpeg" class="image" width="100%">
-                    <div class="photography_word">Moonshadows</div>
-                </figure>
-                <figure>
-                    <img src="images/katsu.jpeg" class="image" width="100%">
-                    <div class="photography_word">Tonkatsu</div>
+                    <img src="images/erewhon.jpeg" class="image" width="100%" alt="2 cups of coconut smoothie">
+                    <a href="images/erewhon.jpeg" data-lightbox="image-8">
+                        <p class="photography_word">Coconut Cloud Smoothie</p>
+                    </a>
                 </figure>
             </div>
             <div class = "column">
                 <figure>
-                    <img src="images/hollywoodsign.jpeg" class="image" width="100%">
-                    <div class="photography_word">Hollywood Sign</div>
+                    <img src="images/shakeshack.jpeg" class="image" width="100%" alt="bacon cheese french fries and 2 burgers">
+                    <a href="images/shakeshack.jpeg" data-lightbox="image-9">
+                        <p class="photography_word">Shake Shack</p>
+                    </a>
                 </figure>
                 <figure>
-                    <img src="images/brunch.jpeg" class="image" width="100%">
-                    <div class="photography_word">Marco Polo</div>
+                    <img src="images/sixflag.jpeg" class="image" width="100%" alt="green roller coaster">
+                    <a href="images/sixflag.jpeg" data-lightbox="image-10">
+                        <p class="photography_word">Twister-Six Flag Magic Mountain</p>
+                    </a>
                 </figure>
                 <figure>
-                    <img src="images/madeinla.jpeg" class="image" width="100%">
-                    <div class="photography_word">Made In Downtown LA</div>
+                    <img src="images/izakaya.jpeg" class="image" width="100%" alt="toro uni bowl ina blue bowl">
+                    <a href="images/izakaya.jpeg" data-lightbox="image-11">
+                        <p class="photography_word">Toro Uni Bowl</p>
+                    </a>
                 </figure>
                 <figure>
-                    <img src="images/sukiyaki.jpeg" class="image" width="100%">
-                    <div class="photography_word">Otoro Bowl with Caviar</div>
+                    <img src="images/sanmarino.jpeg" class="image" width="100%" alt="coffee and cake sign">
+                    <a href="images/sanmarino.jpeg" data-lightbox="image-12">
+                        <p class="photography_word">GO CAKES</p>
+                    </a>
                 </figure>
                 <figure>
-                    <img src="images/sixflagnight.jpeg" class="image" width="100%">
-                    <div class="photography_word">Six Flag Magic Mountain</div>
+                    <img src="images/sky.jpeg" class="image" width="100%" alt="blue and pink sky">
+                    <a href="images/sky.jpeg" data-lightbox="image-13">
+                        <p class="photography_word">Sky</p>
+                    </a>
+                </figure>
+                <figure>
+                    <img src="images/taier.jpeg" class="image" width="100%" alt="pickle fish in a white plate">
+                    <a href="images/taier.jpeg" data-lightbox="image-14">
+                        <p class="photography_word">Taier太二酸菜鱼</p>
+                    </a>
+                </figure>
+                <figure>
+                    <img src="images/thebroad.jpeg" class="image" width="100%" alt="a menu with pink flower">
+                    <a href="images/thebroad.jpeg" data-lightbox="image-15">
+                        <p class="photography_word">Otium</p>
+                    </a>
+                </figure>
+                <figure>
+                    <img src="images/moonshadowinside.jpeg" class="image" width="100%" alt="pacific view">
+                    <a href="images/moonshadowinside.jpeg" data-lightbox="image-16">
+                        <p class="photography_word">Moonshadows</p>
+                    </a>
+                </figure>
+                <figure>
+                    <img src="images/katsu.jpeg" class="image" width="100%" alt="curry katsu">
+                    <a href="images/katsu.jpeg" data-lightbox="image-17">
+                        <p class="photography_word">Tonkatsu</p>
+                    </a>
+                </figure>
+            </div>
+            <div class = "column">
+                <figure>
+                    <img src="images/hollywoodsign.jpeg" class="image" width="100%" alt="hollywood sign on mountain">
+                    <a href="images/hollywoodsign.jpeg" data-lightbox="image-18">
+                        <p class="photography_word">Hollywood Sign</p>
+                    </a>
+                </figure>
+                <figure>
+                    <img src="images/brunch.jpeg" class="image" width="100%" alt="5 dishes on a marble table">
+                    <a href="images/brunch.jpeg" data-lightbox="image-19">
+                        <p class="photography_word">Marco Polo</p>
+                    </a>
+                </figure>
+                <figure>
+                    <img src="images/madeinla.jpeg" class="image" width="100%" alt="a polarid and a red hat">
+                    <a href="images/madeinla.jpeg" data-lightbox="image-20">
+                        <p class="photography_word">Made In Downtown LA</p>
+                    </a>
+                </figure>
+                <figure>
+                    <img src="images/sukiyaki.jpeg" class="image" width="100%" alt="2 otoro bowl with caviar">
+                    <a href="images/sukiyaki.jpeg" data-lightbox="image-21">
+                        <p class="photography_word">Otoro Bowl with Caviar</p>
+                    </a>
+                </figure>
+                <figure>
+                    <img src="images/sixflagnight.jpeg" class="image" width="100%" alt="pink sky">
+                    <a href="images/sixflagnight.jpeg" data-lightbox="image-22">
+                        <p class="photography_word">Six Flag Magic Mountain</p>
+                    </a>
+                </figure>
 
-
+                <figure>
+                    <img src="images/flight.jpeg" class="image" width="100%" alt="LA night view on flight">
+                    <a href="images/flight.jpeg" data-lightbox="image-23">
+                        <p class="photography_word">Flight to LA</p>
+                    </a>
                 </figure>
                 <figure>
-                    <img src="images/flight.jpeg" class="image" width="100%">
-                    <div class="photography_word">Flight to LA</div>
+                    <img src="images/noodles.jpeg" class="image" width="100%" alt="dipping noodles">
+                    <a href="images/noodles.jpeg" data-lightbox="image-24">
+                        <p class="photography_word">Tsujita LA Artisan Noodle</p>
+                    </a>
                 </figure>
                 <figure>
-                    <img src="images/noodles.jpeg" class="image" width="100%">
-                    <div class="photography_word">Tsujita LA Artisan Noodle</div>
+                    <img src="images/glandalecupcake.jpeg" class="image" width="100%" alt="cupcake atm">
+                    <a href="images/glandalecupcake.jpeg" data-lightbox="image-25">
+                        <p class="photography_word">Sprinkles Cupcake</p>
+                    </a>
                 </figure>
                 <figure>
-                    <img src="images/glandalecupcake.jpeg" class="image" width="100%">
-                    <div class="photography_word">Sprinkles Cupcake</div>
-                </figure>
-                <figure>
-                    <img src="images/rodeo.jpeg" class="image" width="100%" height="50%">
-                    <div class="photography_word">Wilshire</div>
+                    <img src="images/rodeo.jpeg" class="image" width="100%" alt="pink flower in front of white building">
+                    <a href="images/rodeo.jpeg" data-lightbox="image-26">
+                        <p class="photography_word">Wilshire</p>
+                    </a>
                 </figure>
             </div>
     </div>
@@ -152,9 +204,10 @@
         <div></div>
     </main>
     <script src="js/script.js"></script>
+    <script src="/js/lightbox-plus-jquery.js"></script>
     <footer class="food_footer">
         <p> &copy; Wenxi Wang & Sherrie Li - Web Design 2024</p>
-        <img src="images/la.png">
+        <img src="images/la.png" alt="The ultimate LA guide">
     </footer>
 </body>
 </html>

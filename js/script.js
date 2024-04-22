@@ -1,12 +1,12 @@
 let mybutton = document.getElementById("myBtn");
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
-  }
+// window.onscroll = function() {scrollFunction()};
+// function scrollFunction() {
+//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//       mybutton.style.display = "block";
+//     } else {
+//       mybutton.style.display = "none";
+//     }
+//   }
 
 function topFunction() {
     document.body.scrollTop = 0; // For Safari
@@ -24,16 +24,16 @@ document.addEventListener('DOMContentLoaded', function(){
 
 ScrollReveal().reveal('.image', { delay: 200 });
 
-const imgs = document.querySelectorAll('img');
-const fullPage = document.querySelector('#photographyFullpage');
-function popUp(){}
+// const imgs = document.querySelectorAll('img');
+// const fullPage = document.querySelector('#photographyFullpage');
+// function popUp(){
 
-imgs.forEach(img => {
-  img.addEventListener('click', function() {
-    fullPage.style.backgroundImage = 'url(' + img.src + ')';
-    console.log('click working')
-    fullPage.style.display = 'block';
-  });
-});
-
+// imgs.forEach(img => {
+//   img.addEventListener('click', function() {
+//     fullPage.style.backgroundImage = 'url(' + img.src + ')';
+//     console.log('click working')
+//     fullPage.style.display = 'block';
+//   });
+// });
+// }
 
