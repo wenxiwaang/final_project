@@ -76,8 +76,8 @@ body {
     padding: 20px;
     font-size: 18px;
     text-decoration: none; /* Remove underline from links */
-    color: white; /* Set text color */
-    background-color:#697A09; /* Optional: background color */
+    color: #ffffff; /* Set text color */
+    background-color:#5F8009; /* Optional: background color */
     border: none; /* Optional: no border */
     border-radius: 50%;
     cursor: pointer;
@@ -462,4 +462,3 @@ figure:hover .photography_word {
     width: 150px;
     height: 150px;
 }
-
