@@ -292,7 +292,19 @@ body {
         display: grid;
         grid-template-columns: 1fr;
     }
+    
+    /* FOOD PAGE */
+    .food_intro {
+        margin: 30px;
+    }
 
+    .restaurant_grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    /* PHOTOGRAPHY PAGE */
     .row {
         display: flex;
         flex-wrap: wrap;
@@ -306,7 +318,6 @@ body {
         padding: 20px 4px;
       }
 }
-
 
 
 
