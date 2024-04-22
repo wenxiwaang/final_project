@@ -227,7 +227,7 @@ body {
     height: 150px;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (max-width: 750px) {
     /* MENU PAGE */
     #no-scroll {
         overflow: none;
