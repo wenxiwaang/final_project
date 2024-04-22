@@ -470,7 +470,7 @@ figure:hover .photography_word {
 }
 
 @media screen and (min-width: 768px){
-    .cover-text {
+/*     .cover-text {
         font-size: 75px;
         position:absolute;
         top: 500px;
@@ -489,7 +489,7 @@ figure:hover .photography_word {
         font-size: 45px;
         color: black;
         text-align: center;
-    }
+    } */
 
     
     .restaurant_grid{
