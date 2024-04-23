@@ -7,7 +7,6 @@ body {
     overflow: hidden;
 }
 
-/* font setting */
 .font {
   font-family: "Noto Serif Display", serif;
   font-optical-sizing: auto;
@@ -16,54 +15,25 @@ body {
   font-variation-settings: "wdth" 100;
 }
 
+/* MOBILE VIEW
 /* "The ultimate Guide to LA" */
 .cover-text {
-    font-size: 75px;
-    position: absolute;
-    top: 110px;
-    left: 60px;
-    color: white;
-    line-height: 1;
+    display: none;
 }
 
-/* .cover-text {
-    font-size: 50px;
-    font-weight: bold;
-    color: white;
-    position: absolute;
-    right: 120px;
-    top: 40px;
-    text-align: center;
-} */
-
-.large-initial {
-    font-size: 110px;
-    font-weight: 40%;
-    color: white;
-}
 
 /* car photo */
 .cover-photo {
-    object-fit: cover;
-    object-position: 0px -140px;
+    display: none;
 }
-
 
 .menu-container {
     display: grid;
-    grid-template-columns: auto 40%;
+    grid-template-rows: 1fr; 
     width: 100vw;
     height: 100vh;
     background-color: #312202;
 }
-
-
-/* .nav-mainmenu {
-    margin-top: 200px;
-    margin-left: 40px;
-    font-size: 45px;
-    color: black;
-} */
 
 .hidden {
     display: none;
@@ -75,22 +45,22 @@ body {
     left: 20px;
     padding: 20px;
     font-size: 18px;
-    text-decoration: none; /* Remove underline from links */
-    color: #EDF7B5; /* Set text color */
-    background-color:#6D8C18; /* Optional: background color */
-    border: none; /* Optional: no border */
+    text-decoration: none; 
+    color: #EDF7B5; 
+    background-color:#6D8C18; 
+    border: none; 
     border-radius: 50%;
     cursor: pointer;
     z-index: 1000;
 }
 
 .nav-mainmenu {
-    margin-top: 100px;
-    margin-left: 40px;
+    margin-top: 70px;
+    margin-left: 20px;
     font-size: 45px;
     color: black;
     text-align: center;
-}
+} 
 
 .nav-mainmenu li a {
     text-decoration: none;
@@ -109,7 +79,7 @@ body {
     font-style: italic;
     color: white;
     line-height: 25px;
-}
+} 
 
 
 /* travel page skip to main button */
@@ -140,22 +110,16 @@ body {
     z-index: 100;
 }
 
-/* .travel-header-pic {
-    justify-items: center;
-    height: auto;
-    margin-bottom: 100px;
-} */
-
 .travel-intro {
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 100px;
+    margin-right: 100px;
     margin-bottom: 100px;
     text-align: center;
 }
 
 .travel-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     column-gap: 30px;
     justify-items: center;
     padding: 0px 20px;
@@ -229,6 +193,7 @@ body {
 
 
 
+
 /* restaurant page - SHERRIE */
 
 /* food page skip to main content */
@@ -259,17 +224,16 @@ body {
 }
 
 .food_intro {
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 100px;
+    margin-right: 100px;
     margin-bottom: 100px;
     text-align: center;
 }
 
 
-
 .restaurant_grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     column-gap: 30px;
     justify-items: center;
     padding: 0px 20px;
@@ -471,55 +435,463 @@ figure:hover .photography_word {
 }
 
 
+
+
+
 @media screen and (min-width: 768px){
-    /* .cover-text {
-        font-size: 75px;
-        position:absolute;
-        top: 500px;
-        left: 60px;
-        color: white;
-        line-height: 1;
-    }
+.cover-text {
+    display: grid;
+    justify-content: start;
+    justify-items: start;
+    text-align: center;
+    font-size: 65px;
+    position:absolute;
+    top: 80px;
+    left: 30px;
+    color: white;
+    font-weight: bold;
+}
 
-    .cover-photo{
-        width: 100%;
-        height: 100%;
-    }
-    .nav-mainmenu {
-        margin-top: 200px;
-        margin-left: 40px;
-        font-size: 45px;
-        color: black;
-        text-align: center;
-    } */
+.cover-photo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1000px;
+    height: 100%;
+    object-fit: cover;
+    object-position: fixed;
+}
 
+.menu-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    /* width: 100vw;
+    height: 100vh; */
+}
+
+.nav-mainmenu {
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    font-size: 45px;
+    color: black;
+    text-align: center;
+}
+
+.nav-intro {
+    margin-top: 40px;
+    margin-right: 30px;
+    font-size: 12px;
+    font-style: italic;
+    color: white;
+    line-height: 18px;
+} 
+
+.travel-intro {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.food_intro {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.restaurant_grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.travel-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    align-items: flex-start;
+}
     
-    .restaurant_grid{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    .travel-grid{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
+.column {
+    flex: 40%;
+    max-width: 50%;
+    padding: 20px 4px;
+    justify-content: space-evenly;
+}
+}
 
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 10px;
-        align-items: flex-start;
-      }
+
+@media screen and (min-width: 1280px){
     
-      .column {
-        flex: 30%;
-        max-width: 40%;
-        padding: 20px 4px;
-        justify-content: space-evenly;
-      }
+/* "The ultimate Guide to LA" */
+.cover-text {
+    display: grid;
+    justify-content: start;
+    justify-items: start;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    line-height: 100px;
+    position: absolute;
+    top: 110px;
+    left: 60px;
+    text-align: center;
+}
+
+/* car photo */
+.cover-photo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    object-fit: cover;
+    object-position: 0 -180px;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.nav-intro {
+    margin-top: 80px;
+    margin-right: 30px;
+    font-size: 18px;
+    font-style: italic;
+    color: white;
+    line-height: 25px;
+} 
+
+/* travel page header "Travel" */
+
+.travel-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    justify-items: center;
+    padding: 0px 20px;
+}
+
+.travel-intro {
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.location-grid {
+    line-height: 25px;
+    margin-bottom: 150px;
+}
+
+.location-name {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.location-link {
+    text-decoration: none;
+    color: black;
+}
+
+.location-link:hover {
+    text-decoration: underline;
+    color: #6D8C18;
+}
+
+.location-info {
+    font-size: 14px;
+    line-height: 20px;
+    color: #312202;
+}
+
+.location-photos {
+    object-fit: cover;
+    width:  450px;
+    height: 600px;
+    margin-bottom: 10px;
+}
+
+.location-photos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area, cropping as needed */
+}
+
+
+.travel-footer {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #312202;
+    height: 300px;
+    color: #EDF7B5;
+}
+/* .travel-footer p {
+    padding: 20px;
+} */
+
+.travel-footer img {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+}
 
 
 
+
+
+/* restaurant page - SHERRIE */
+
+/* food page skip to main content */
+.food_skip {
+    position: fixed;
+    top: 10px;
+    right: 16px;
+    background-color: #fff;
+    order: 1px solid #000;
+    padding: 8px 15px;
+    z-index: 999;
+    color: #000;
+    text-decoration: none;
+    opacity: 0;
+}
+.food_skip:focus {
+    opacity: 1;
+}
+
+.food_header {
+    font-size: 70px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.food_intro {
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+
+
+.restaurant_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    justify-items: center;
+    padding: 0px 20px;
+}
+
+
+
+.food_grid {
+    line-height: 25px;
+    margin-bottom: 150px;
+}
+
+
+.food_name {
+    display: flex;
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.food_info {
+    display: flex;
+    font-size: 14px;
+    line-height: 20px;
+    color: #312202;
+    justify-content: center;
+}
+
+
+
+
+.food_photo {
+    object-fit: cover; 
+    width:  450px; 
+    height: 600px;
+    margin-bottom: 10px;
+}
+
+.food_photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    cursor: pointer;
+    object-fit: cover; /* Ensures the image covers the area, cropping as needed */
+}
+
+.food_photo img:hover{
+    border: 3px solid #fad793;
+    transform: scale(0.97);
+    transition: 0.3s;
+    z-index: 102;
+}
+
+
+
+
+.food_footer {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #312202;
+    height: 300px;
+    color: #EDF7B5;
+}
+
+.food_footer img {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+}
+
+
+/* photography page */
+
+
+.photography_skip {
+    position: fixed;
+    top: 10px;
+    right: 16px;
+    background-color: #fff;
+    order: 1px solid #000;
+    padding: 8px 15px;
+    z-index: 999;
+    color: #000;
+    text-decoration: none;
+    opacity: 0;
+}
+.photography_skip:focus {
+    opacity: 1;
+}
+
+.photography_header {
+    font-size: 70px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    align-items: flex-start;
+  }
+
+  .column {
+    flex: 30%;
+    max-width: 40%;
+    padding: 20px 4px;
+  }
+  
+  .column img {
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    
+  }
+  .column figure {
+    position: relative;
+    width: 100%;
+    max-width: 120%;
+    cursor:pointer;
+  }
+  .image {
+    display: block;
+    width: 100%;
+  }
+
+.photography_word {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.3); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-justify:start;    /*learn how to move it to bottom left*/
+    text-align:start;
+  }
+
+
+
+figure:hover .photography_word {
+    opacity: 1;
+
+  }
+
+
+
+
+#photographyFullpage {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-color: black;
+  }
+
+.photography_footer {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #312202;
+    height: 300px;
+    color: #EDF7B5;
+}
+
+.photography_footer img {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+}
 
 }
