@@ -8,11 +8,11 @@ body {
 }
 
 .font {
-  font-family: "Noto Serif Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 3;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
+    font-family: "Noto Serif Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 3;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
 
 /* MOBILE VIEW
@@ -98,6 +98,7 @@ body {
 .travel-skip:focus {
     opacity: 1;
 }
+
 
 /* travel page header "Travel" */
 .travel-header {
@@ -193,7 +194,7 @@ body {
     opacity: 1;
 } 
 
-
+  
 .travel-footer {
     display: flex;
     flex-direction: column-reverse;
@@ -204,9 +205,7 @@ body {
     height: 300px;
     color: #EDF7B5;
 }
-/* .travel-footer p {
-    padding: 20px;
-} */
+
 
 .travel-footer img {
     position: relative;
@@ -216,6 +215,7 @@ body {
     width: 150px;
     height: 150px;
 }
+
 
 
 
